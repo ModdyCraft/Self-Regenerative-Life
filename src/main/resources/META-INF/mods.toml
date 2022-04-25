@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="selfregenerative_life"
+version="1.0.3"
+displayName="Self-Regenerative Life"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/self-regenerative-life"
+logoFile="logo.png"
+authors="ModdyCraft, MCreator"
+description='''
+Regenerate your life, but it has a price and that price is your experience
+'''
+
+[[dependencies.selfregenerative_life]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

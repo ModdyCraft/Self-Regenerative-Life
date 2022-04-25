@@ -1,0 +1,67 @@
+{
+  "mod_elements": [
+    {
+      "name": "RegenerarVida",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regenerar_vida",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "TicksAReducir",
+      "type": "number",
+      "scope": "map",
+      "value": "2.0"
+    },
+    {
+      "name": "SaludAAnadir",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "selfregenerative_life",
+    "modName": "Self-Regenerative Life",
+    "version": "1.0.3",
+    "description": "Regenerate your life, but it has a price and that price is your experience",
+    "author": "ModdyCraft, MCreator",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/self-regenerative-life",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "cl123",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.moddycraft.selfregenerativelife",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100354000
+}
