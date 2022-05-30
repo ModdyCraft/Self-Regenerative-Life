@@ -36,7 +36,7 @@ public class RegenerarVidaProcedure {
 		if (entity.getPersistentData().getDouble("ticksDelJugador") >= SelfregenerativeLifeModVariables.MapVariables.get(world).reducTicks) {
 			entity.getPersistentData().putDouble("ticksDelJugador", 0);
 		}
-		if (entity.getPersistentData().getDouble("ticksDelJugador") >= SelfregenerativeLifeModVariables.MapVariables.get(world).ticksNeeded) {
+		if (entity.getPersistentData().getDouble("ticksDelJugador") == SelfregenerativeLifeModVariables.MapVariables.get(world).ticksNeeded) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt
 					? _livEnt.getMaxHealth()
 					: -1)) {

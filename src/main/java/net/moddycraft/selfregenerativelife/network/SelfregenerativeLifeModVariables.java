@@ -92,7 +92,7 @@ public class SelfregenerativeLifeModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "selfregenerative_life_mapvars";
 		public double SaludAAnadir = 1.0;
-		public double reducTicks = 200.0;
+		public double reducTicks = 140.0;
 		public double ticksNeeded = 120.0;
 		public double xpNeeded = 2.0;
 		public double removeXp = 1.5;

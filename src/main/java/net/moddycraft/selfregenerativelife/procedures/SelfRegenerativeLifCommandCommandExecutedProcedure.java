@@ -16,7 +16,7 @@ public class SelfRegenerativeLifCommandCommandExecutedProcedure {
 		double xpN = 0;
 		double removeX = 0;
 		saludAA = 1;
-		reducT = 200;
+		reducT = 140;
 		ticksN = 120;
 		xpN = 2;
 		removeX = 1.5;
