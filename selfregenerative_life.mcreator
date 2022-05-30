@@ -19,25 +19,94 @@
           }
         ]
       }
+    },
+    {
+      "name": "MensajeDeInicio",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mensaje_de_inicio",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SelfRegenerativeLifCommandCommandExecuted",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "self_regenerative_lif_command_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SelfRegenerativeLifCommand",
+      "type": "command",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "self_regenerative_lif_command"
     }
   ],
   "variable_elements": [
-    {
-      "name": "TicksAReducir",
-      "type": "number",
-      "scope": "map",
-      "value": "2.0"
-    },
     {
       "name": "SaludAAnadir",
       "type": "number",
       "scope": "map",
       "value": "1.0"
+    },
+    {
+      "name": "reducTicks",
+      "type": "number",
+      "scope": "map",
+      "value": "120.0"
+    },
+    {
+      "name": "ticksNeeded",
+      "type": "number",
+      "scope": "map",
+      "value": "120.0"
+    },
+    {
+      "name": "xpNeeded",
+      "type": "number",
+      "scope": "map",
+      "value": "2.0"
+    },
+    {
+      "name": "removeXp",
+      "type": "number",
+      "scope": "map",
+      "value": "1.5"
     }
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "mensaje.dispo": "you are being healed",
+      "mensaje.falta.xp": "You need experience to be able to heal"
+    },
+    "es_mx": {
+      "mensaje.dispo": "usted está siendo curado",
+      "mensaje.falta.xp": "Necesitas experiencia para poder curarte"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -63,5 +132,5 @@
     "modElementsPackage": "net.moddycraft.selfregenerativelife",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100354000
+  "mcreatorVersion": 202200120510
 }

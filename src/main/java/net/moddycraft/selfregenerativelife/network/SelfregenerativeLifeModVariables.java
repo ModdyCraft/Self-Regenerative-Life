@@ -91,8 +91,11 @@ public class SelfregenerativeLifeModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "selfregenerative_life_mapvars";
-		public double TicksAReducir = 2.0;
 		public double SaludAAnadir = 1.0;
+		public double reducTicks = 120.0;
+		public double ticksNeeded = 120.0;
+		public double xpNeeded = 2.0;
+		public double removeXp = 1.5;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -101,14 +104,20 @@ public class SelfregenerativeLifeModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			TicksAReducir = nbt.getDouble("TicksAReducir");
 			SaludAAnadir = nbt.getDouble("SaludAAnadir");
+			reducTicks = nbt.getDouble("reducTicks");
+			ticksNeeded = nbt.getDouble("ticksNeeded");
+			xpNeeded = nbt.getDouble("xpNeeded");
+			removeXp = nbt.getDouble("removeXp");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.putDouble("TicksAReducir", TicksAReducir);
 			nbt.putDouble("SaludAAnadir", SaludAAnadir);
+			nbt.putDouble("reducTicks", reducTicks);
+			nbt.putDouble("ticksNeeded", ticksNeeded);
+			nbt.putDouble("xpNeeded", xpNeeded);
+			nbt.putDouble("removeXp", removeXp);
 			return nbt;
 		}
 
