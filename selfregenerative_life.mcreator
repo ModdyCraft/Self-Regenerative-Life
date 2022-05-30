@@ -115,7 +115,7 @@
   "workspaceSettings": {
     "modid": "selfregenerative_life",
     "modName": "Self-Regenerative Life",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Regenerate your life, but it has a price and that price is your experience",
     "author": "ModdyCraft, MCreators",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/self-regenerative-life",
@@ -127,7 +127,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.17.1",
+    "currentGenerator": "forge-1.18.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.moddycraft.selfregenerativelife",
     "lockBaseModFiles": false

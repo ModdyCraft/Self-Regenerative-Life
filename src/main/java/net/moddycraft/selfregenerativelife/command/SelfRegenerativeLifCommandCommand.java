@@ -22,7 +22,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @Mod.EventBusSubscriber
 public class SelfRegenerativeLifCommandCommand {
 	@SubscribeEvent
-	public static void registerCommands(RegisterCommandsEvent event) {
+	public static void registerCommand(RegisterCommandsEvent event) {
 		event.getDispatcher().register(Commands.literal("Recover_Life")
 
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(SelfRegenerativeLifCommandCommand::execute))

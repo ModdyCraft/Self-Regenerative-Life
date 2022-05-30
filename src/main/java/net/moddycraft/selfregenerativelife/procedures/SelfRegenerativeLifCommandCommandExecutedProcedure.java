@@ -1,5 +1,7 @@
 package net.moddycraft.selfregenerativelife.procedures;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.moddycraft.selfregenerativelife.network.SelfregenerativeLifeModVariables;
 
 import net.minecraft.world.level.LevelAccessor;
