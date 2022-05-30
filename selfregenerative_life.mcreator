@@ -63,14 +63,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "self_regenerative_lif_command"
-    },
-    {
-      "name": "Overhelp",
-      "type": "overlay",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "overhelp"
     }
   ],
   "variable_elements": [
