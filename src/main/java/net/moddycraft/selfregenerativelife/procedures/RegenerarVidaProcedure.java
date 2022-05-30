@@ -48,6 +48,7 @@ public class RegenerarVidaProcedure {
 								+ SelfregenerativeLifeModVariables.MapVariables.get(world).SaludAAnadir));
 					if (entity instanceof Player _player && !_player.level.isClientSide())
 						_player.displayClientMessage(new TextComponent((new TranslatableComponent("mensaje.dispo").getString())), (false));
+					entity.getPersistentData().putDouble("ticksDelJugador", 0);
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
 						_player.displayClientMessage(new TextComponent((new TranslatableComponent("mensaje.falta.xp").getString())), (false));

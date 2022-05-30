@@ -76,7 +76,7 @@
       "name": "reducTicks",
       "type": "number",
       "scope": "map",
-      "value": "120.0"
+      "value": "200.0"
     },
     {
       "name": "ticksNeeded",
