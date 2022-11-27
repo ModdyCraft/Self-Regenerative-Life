@@ -11,8 +11,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TranslatableComponent;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
@@ -47,11 +46,11 @@ public class RegenerarVidaProcedure {
 						_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 								+ SelfregenerativeLifeModVariables.MapVariables.get(world).SaludAAnadir));
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent((new TranslatableComponent("mensaje.dispo").getString())), (false));
+						_player.displayClientMessage(Component.literal((Component.translatable("mensaje.dispo").getString())), (false));
 					entity.getPersistentData().putDouble("ticksDelJugador", 0);
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent((new TranslatableComponent("mensaje.falta.xp").getString())), (false));
+						_player.displayClientMessage(Component.literal((Component.translatable("mensaje.falta.xp").getString())), (false));
 				}
 			}
 		}
